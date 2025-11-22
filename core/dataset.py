@@ -1,10 +1,19 @@
+from pathlib import Path
+from openpyxl import load_workbook
+import pymupdf as fitz
+import pandas as pd
+import shutil
+
+from services.uploader import Uploader
+from services.update_inv import InvUpdater
+
 class DataSet:
     def __init__(self, internal_code, config):
         self.internal_code = internal_code
-
         self.config = config
-        self.qd_code = ""  # QD号
 
+        # QD号，非必须
+        self.qd_code = ""  # QD号
         # 源Excel
         self.src_excel = None   # Path
         self.ws_customs = None
