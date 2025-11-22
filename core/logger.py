@@ -49,6 +49,7 @@ class ExceptionLogger:
     
 
 if __name__ == "__main__":
+
     log = PrintLog()
 
     log.info("This is an info")
@@ -56,3 +57,10 @@ if __name__ == "__main__":
     log.warn("This is a warn")
     log.error("This is an error")
     log.path("This is a path")
+
+    exception = ExceptionLogger()
+    exception.add("This is an error")
+    exception.add("This is another error")
+    exception.add("This is a third error")
+    exception.add("This is a fourth error")
+    print(exception)
