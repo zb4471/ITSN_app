@@ -1,0 +1,10 @@
+[paths]
+src_root = "D:/共享文件夹/金丽华"
+chrome_profile = "C:\PlaywrightProfiles\fenbo"
+
+[mapping]
+country_table = "resources/country.xlsx"
+currency_table = "resources/currency.xlsx"
+
+[settings]
+round_scale = 5
